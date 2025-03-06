@@ -1,0 +1,7 @@
+select
+       a,
+       b,
+       c,
+       sum(case when d > 0 then d end), from ga group by a,
+         b,
+         c
